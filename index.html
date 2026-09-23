@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ethio-Mart — a modern Ethiopian marketplace for everyday products, local goods and lifestyle essentials.">
+  <meta name="theme-color" content="#0d3b2e">
+  <title>Ethio-Mart | Modern Ethiopian Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">
+    <div class="container announcement-inner">
+      <span>🇪🇹 Proudly designed for Ethiopian shoppers</span>
+      <span class="announcement-detail">Prices shown in Ethiopian Birr (ETB) · Secure-ready checkout</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Ethio-Mart home">
+        <span class="brand-mark">E</span>
+        <span class="brand-text">Ethio<span>-Mart</span></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Marketplace</a>
+        <a href="#deals">Offers</a>
+        <a href="#about">Why Ethio-Mart</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" title="Toggle appearance" aria-label="Toggle appearance">☾</button>
+        <button class="icon-btn" id="favoritesBtn" title="Favorites" aria-label="Favorites">♡<b id="favoriteCount">0</b></button>
+        <button class="cart-btn" id="cartBtn">Cart <span id="cartCount">0</span></button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-animate" id="home">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-kicker"><span></span> ETHIOPIAN MARKETPLACE</div>
+          <h1>Designed around the way <em>you shop.</em></h1>
+          <p>Discover local favorites, everyday essentials, electronics, fashion and home products in one thoughtfully organized marketplace.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#products">Explore products <span>→</span></a>
+            <a class="btn btn-ghost" href="#categories">Browse categories</a>
+          </div>
+          <div class="hero-metrics">
+            <div><strong>20+</strong><span>Curated products</span></div>
+            <div><strong>6</strong><span>Core categories</span></div>
+            <div><strong>ETB</strong><span>Local pricing</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="floating-tag tag-top">New arrivals <strong>+12</strong></div>
+          <div class="showcase-card">
+            <div class="showcase-header">
+              <span>Featured collection</span>
+              <span class="live-dot">● Live catalog</span>
+            </div>
+            <div class="showcase-image">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=85" alt="Curated marketplace products">
+              <div class="image-overlay">
+                <span>CURATED PICK</span>
+                <strong>Everyday essentials, elevated.</strong>
+              </div>
+            </div>
+            <div class="showcase-bottom">
+              <div><span>Starting from</span><strong>450 ETB</strong></div>
+              <a href="#products">Shop collection ↗</a>
+            </div>
+          </div>
+          <div class="floating-tag tag-bottom"><span>★</span> Trusted-ready experience</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-section">
+      <div class="container search-panel">
+        <div class="search-wrap">
+          <span class="search-icon">⌕</span>
+          <input id="searchInput" type="search" placeholder="Search products, categories or keywords..." autocomplete="off">
+          <button class="clear-search" id="clearSearch" aria-label="Clear search">×</button>
+        </div>
+        <button class="filter-btn" id="filterBtn"><span>☷</span> Filters <small id="filterCount">0</small></button>
+      </div>
+    </section>
+
+    <section class="section section-animate" id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">DISCOVER</span>
+            <h2>Shop by category</h2>
+            <p>Purposefully grouped for faster, simpler shopping.</p>
+          </div>
+          <button class="text-link" id="viewAllCategories">View all products →</button>
+        </div>
+        <div class="category-grid" id="categoryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-animate" id="deals">
+      <div class="container promo-grid">
+        <article class="promo-main">
+          <div>
+            <span class="eyebrow light">LIMITED-TIME OFFERS</span>
+            <h2>Smart choices.<br><em>Better value.</em></h2>
+            <p>Explore selected products with promotional pricing while the offer lasts.</p>
+            <a class="btn btn-light" href="#products">Explore offers <span>→</span></a>
+          </div>
+          <div class="promo-orbit">
+            <div class="promo-percent">30<small>%</small></div>
+            <span>selected<br>items</span>
+          </div>
+        </article>
+        <article class="promo-side">
+          <span class="eyebrow">LOCAL FAVORITES</span>
+          <h3>Ethiopian coffee culture, delivered to your cart.</h3>
+          <p>Start with our single-origin coffee collection and discover more local-inspired goods.</p>
+          <button class="text-link" data-category-link="Food & Drinks">Shop food & drinks →</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-animate" id="products">
+      <div class="container">
+        <div class="market-toolbar">
+          <div class="section-heading compact">
+            <div>
+              <span class="eyebrow">MARKETPLACE</span>
+              <h2>Curated products</h2>
+              <p id="resultsLabel">20 products available</p>
+            </div>
+          </div>
+          <div class="toolbar-actions">
+            <span class="active-filter" id="activeFilter">All products</span>
+            <select id="sortSelect" aria-label="Sort products">
+              <option value="featured">Sort: Featured</option>
+              <option value="price-low">Price: Low to high</option>
+              <option value="price-high">Price: High to low</option>
+              <option value="rating">Rating: Highest</option>
+              <option value="name">Name: A–Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+        <div class="empty-state hidden" id="emptyState">
+          <div class="empty-icon">⌕</div>
+          <h3>No matching products</h3>
+          <p>Try a different keyword or reset your category filters.</p>
+          <button class="btn btn-primary" id="resetFilters">Reset filters</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-animate value-section" id="about">
+      <div class="container">
+        <div class="section-heading center">
+          <div>
+            <span class="eyebrow">THE ETHIO-MART STANDARD</span>
+            <h2>Built around a better shopping journey.</h2>
+            <p>Clear information, intentional interactions and a mobile-first experience.</p>
+          </div>
+        </div>
+        <div class="value-grid">
+          <article class="value-card">
+            <span class="value-number">01</span>
+            <div class="value-icon">◈</div>
+            <h3>Curated discovery</h3>
+            <p>Organized categories and focused product information help shoppers reach the right item quickly.</p>
+          </article>
+
+          <article class="value-card">
+            <span class="value-number">02</span>
+            <div class="value-icon">↗</div>
+            <h3>Responsive by design</h3>
+            <p>A flexible interface adapts smoothly across phones, tablets and desktop screens.</p>
+          </article>
+
+          <article class="value-card">
+            <span class="value-number">03</span>
+            <div class="value-icon">⌁</div>
+            <h3>Ready to scale</h3>
+            <p>The frontend is structured for future APIs, payments, delivery tracking and intelligent assistance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-animate map-section">
+      <div class="container map-card">
+        <div class="map-copy">
+          <span class="eyebrow">DELIVERY EXPERIENCE</span>
+          <h2>Local shopping with a clear destination.</h2>
+          <p>Explore Addis Ababa delivery locations. The interface is prepared for a future live map and location service.</p>
+          <div class="map-actions">
+            <a class="btn btn-primary" href="https://www.google.com/maps/search/Addis+Ababa,+Ethiopia" target="_blank" rel="noopener">Open Google Maps ↗</a>
+            <span>📍 Addis Ababa, Ethiopia</span>
+          </div>
+        </div>
+        <div class="map-visual">
+          <div class="map-grid"></div>
+          <div class="map-route"></div>
+          <div class="map-pin"><span>●</span></div>
+          <div class="map-label"><strong>Addis Ababa</strong><small>Delivery area preview</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter section-animate">
+      <div class="container newsletter-card">
+        <div><span class="eyebrow">STAY IN THE LOOP</span><h2>Get new arrivals and offers.</h2><p>A clean newsletter interface ready for a future email service.</p></div>
+        <form id="newsletterForm"><input id="newsletterEmail" type="email" placeholder="Your email address" required><button class="btn btn-primary">Subscribe</button></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#home"><span class="brand-mark">E</span><span class="brand-text">Ethio<span>-Mart</span></span></a>
+        <p>A student-built Ethiopian marketplace concept focused on practical digital commerce.</p>
+        <div class="footer-badges"><span>ETB pricing</span><span>Mobile-first</span></div>
+      </div>
+      <div><h4>Marketplace</h4><a href="#products">All products</a><a href="#categories">Categories</a><a href="#deals">Offers</a></div>
+      <div><h4>Experience</h4><a href="#about">Our approach</a><a href="#home">How it works</a><a href="mailto:nathnaelandualem25@gmail.com">Contact</a></div>
+      <div><h4>Project</h4><p>Frontend prototype<br>Backend-ready architecture</p><a href="https://github.com/Graviton25/Ethio-Mart" target="_blank" rel="noopener">View on GitHub ↗</a></div>
+    </div>
+    <div class="container copyright"><span>© 2026 Ethio-Mart</span><span>Designed & engineered by Nathnael Andualem</span></div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head"><div><span class="eyebrow">YOUR ORDER</span><h2>Shopping cart</h2></div><button class="close-btn" id="closeCart">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="subtotal-line"><span>Subtotal</span><strong id="cartTotal">0 ETB</strong></div>
+      <p class="delivery-note">Delivery and payment options will be calculated at checkout.</p>
+      <button class="btn btn-primary full" id="checkoutBtn">Continue to checkout →</button>
+    </div>
+  </aside>
+
+  <div class="modal-backdrop hidden" id="modalBackdrop">
+    <div class="product-modal" id="productModal"></div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <button class="assistant-btn" id="assistantBtn" aria-label="Open shopping assistant"><span>✦</span><small>Ask</small></button>
+  <aside class="assistant-panel" id="assistantPanel">
+    <div class="drawer-head"><div><span class="eyebrow">ETHIO-MART</span><h3>Shopping assistant</h3></div><button class="close-btn" id="closeAssistant">×</button></div>
+    <div class="assistant-status"><span></span> Available for product guidance</div>
+    <div class="chat-messages" id="chatMessages"><div class="bot-message">Welcome 👋 Tell me what you are looking for and I’ll help you explore the catalog.</div></div>
+    <div class="quick-prompts"><button data-prompt="Show me coffee">Coffee</button><button data-prompt="What are the most affordable products?">Affordable</button><button data-prompt="Show electronics">Electronics</button></div>
+    <form class="chat-form" id="chatForm"><input id="chatInput" placeholder="Ask about products..." autocomplete="off"><button aria-label="Send">↑</button></form>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
